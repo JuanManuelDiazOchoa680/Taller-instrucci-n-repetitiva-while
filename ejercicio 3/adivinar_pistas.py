@@ -7,10 +7,12 @@ import random
 
 cn=random.randint(1, 100)
 un = 0
+n=0
 #processing and output
 
 while un != cn:
     un = int(input("Adivina el número (1-100): "))
+    n=n+1
 
     if un < cn :
         print("mas alto: ")
@@ -19,5 +21,6 @@ while un != cn:
     else:
         break
 
-print("LO CONSEGUISTE")
+print("LO CONSEGUISTE EN: " +str(n)+str(" intentos"))
+
 
